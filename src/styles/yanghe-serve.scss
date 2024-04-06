@@ -1,0 +1,53 @@
+body {
+    background-color: #d0ebfe;
+    font-size: 1.5rem;
+}
+
+.el-carousel__indicators {
+    display: none;
+}
+
+.list {
+    margin: 1rem 0 1rem 1rem;
+    overflow: hidden;
+
+    .menu {
+        background-color: #fff;
+        width: 43.8vw;
+        overflow: hidden;
+        float: left;
+        margin: 0 4vw 1rem 0;
+        border-radius: .3rem;
+
+        .button {
+            height: auto;
+            overflow: hidden;
+            line-height: 2rem;
+            padding: .6rem;
+
+            .left {
+                float: left;
+                width: 4rem;
+                width: 18vw;
+                margin-top: .3rem;
+
+                .el-image {
+                    border-radius: 5rem;
+                    background-color: #ffe9e0;
+                }
+            }
+
+            .right {
+                float: right;
+                width: 18vw;
+                color: #fff;
+            }
+        }
+    }
+
+    .cateTile {
+        width: 100% !important;
+        float: left;
+        padding: 1rem;
+    }
+}

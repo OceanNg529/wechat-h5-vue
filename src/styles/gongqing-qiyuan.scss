@@ -1,0 +1,535 @@
+body {
+    background-color: #c1e9f3;
+    overflow: hidden;
+}
+
+.main {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 10vw;
+        z-index: 9999;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .top {
+        position: absolute;
+        top: 0;
+        z-index: 9;
+        width: 95vw;
+        margin: .8rem 2.5vw;
+        overflow: hidden;
+        .copyright_logo {
+            float: left;
+            width: 20vw;
+            margin-right: .5rem;
+        }
+        .qiyuan_all_button {
+            float: right;
+            width: 38vw;
+        }
+    }
+    .copyright {
+        width: 30vw;
+        margin: 0px 35vw;
+        position: absolute;
+        bottom: 2rem;
+        z-index: 9;
+        font-size: 1rem;
+        text-align: center;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        line-height: 1.3rem;
+    }
+    .bgmask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textLeft {
+        text-align: left !important;
+    }
+    .msg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        .msg_ico {
+            width: 30vw;
+            margin: 0px 30vw;
+            position: relative;
+            top: 2rem;
+            z-index: 9999;
+        }
+        .msg_content {
+            background-color: #fcf5e7;
+            border-radius: 1rem;
+            border: 2px solid #5f3c2c;
+            color: #5f3c2c;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            padding: 1rem;
+            padding-top: 3rem;
+            text-align: center;
+        }
+    }
+    .centerBox {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .start_button,
+    .close_button,
+    .submit_button {
+        width: 40vw;
+        margin: 0 auto;
+        padding-top: 2vh;
+    }
+    .button_list {
+        width: 70vw;
+        margin: 0 15vw;
+        overflow: hidden;
+        padding-top: 5vh;
+        .el-image {
+            width: 48%;
+            margin-right: 1%;
+            float: left;
+        }
+        .el-image:nth-child(2) {
+            margin-right: 0;
+            margin-left: 1%;
+            float: right;
+        }
+    }
+    .index {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        .index_title {
+            width: 95vw;
+            margin: 0 2.5vw;
+        }
+        .index_role1 {
+            width: 30vw;
+            position: fixed;
+            bottom: 7rem;
+            z-index: 999;
+            animation-name: bike;
+            /*动画名称*/
+            animation-duration: 2s;
+            /*设置秒数*/
+            animation-timing-function: linear;
+            /*速度曲线*/
+            animation-iteration-count: infinite;
+            /*播放次数*/
+            animation-direction: alternate;
+            /*逆向播放*/
+            animation-play-state: running;
+            /*正在运行*/
+        }
+        .index_role2 {
+            width: 90vw;
+            margin: 0 5vw;
+        }
+        .index_lamp {
+            width: 57vw;
+            position: fixed;
+            left: 11rem;
+            top: 14rem;
+            animation-name: lamp;
+            /*动画名称*/
+            animation-duration: 2s;
+            /*设置秒数*/
+            animation-timing-function: linear;
+            /*速度曲线*/
+            animation-iteration-count: infinite;
+            /*播放次数*/
+            animation-direction: alternate;
+            /*逆向播放*/
+            animation-play-state: running;
+            /*正在运行*/
+        }
+        .index_cloud1 {
+            width: 25vw;
+            position: fixed;
+            left: 8rem;
+            top: 20rem;
+            animation-name: cloud1;
+            /*动画名称*/
+            animation-duration: 2s;
+            /*设置秒数*/
+            animation-timing-function: linear;
+            /*速度曲线*/
+            animation-iteration-count: infinite;
+            /*播放次数*/
+            animation-direction: alternate;
+            /*逆向播放*/
+            animation-play-state: running;
+            /*正在运行*/
+        }
+        .index_cloud2 {
+            width: 20vw;
+            position: fixed;
+            left: 28rem;
+            top: 26rem;
+            animation-name: cloud2;
+            /*动画名称*/
+            animation-duration: 2s;
+            /*设置秒数*/
+            animation-timing-function: linear;
+            /*速度曲线*/
+            animation-iteration-count: infinite;
+            /*播放次数*/
+            animation-direction: alternate;
+            /*逆向播放*/
+            animation-play-state: running;
+            /*正在运行*/
+        }
+    }
+    .game {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-size: 100% 100%;
+        .game_list {
+            overflow: hidden;
+            position: absolute;
+            z-index: 99;
+            margin-top: -5vh;
+            animation-name: beat;
+            /*动画名称*/
+            animation-duration: .5s;
+            /*设置秒数*/
+            animation-timing-function: linear;
+            /*速度曲线*/
+            animation-iteration-count: infinite;
+            /*播放次数*/
+            animation-direction: alternate;
+            /*逆向播放*/
+            animation-play-state: running;
+            /*正在运行*/
+            ul {
+                height: 50vh;
+            }
+            ul li {
+                background-color: #fbcc0ecc;
+                border-radius: 5rem;
+                text-align: center;
+                font-size: 2rem;
+                color: #95362f;
+                float: left;
+                padding: 1rem 2rem;
+                position: relative;
+                width: 30vw;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            ul li:nth-child(1) {
+                top: 0;
+                left: 15vw;
+            }
+            ul li:nth-child(2) {
+                top: 2vh;
+                left: 25vw;
+            }
+            ul li:nth-child(3) {
+                top: 9vh;
+                left: -39vw;
+            }
+            ul li:nth-child(4) {
+                top: 11vh;
+                left: 45vw;
+            }
+            ul li:nth-child(5) {
+                top: 24vw;
+                left: -26vw;
+            }
+            ul li:nth-child(6) {
+                top: 22vh;
+                left: -49vw;
+            }
+            ul li:nth-child(7) {
+                top: 20vh;
+                left: 58vw;
+            }
+            ul li:nth-child(8) {
+                top: 27vh;
+                left: -22vw;
+            }
+        }
+        .game_role1 {
+            width: 85vw;
+            margin: 0 7.5vw;
+        }
+        .game_role2 {
+            width: 30vw;
+            margin-left: 10vw;
+            float: left;
+            animation-name: bike;
+            /*动画名称*/
+            animation-duration: 2s;
+            /*设置秒数*/
+            animation-timing-function: linear;
+            /*速度曲线*/
+            animation-iteration-count: infinite;
+            /*播放次数*/
+            animation-direction: alternate;
+            /*逆向播放*/
+            animation-play-state: running;
+            /*正在运行*/
+        }
+        .game_role_msg {
+            width: 60vw;
+            position: fixed;
+            left: 36vw;
+            bottom: 18rem;
+            z-index: 99;
+        }
+        .game_box {
+            width: 30vw;
+            float: right;
+            margin-top: 5vh;
+            margin-right: 8vw;
+        }
+    }
+    .qiyuan_detail,
+    .qiyuan_all,
+    .myprize_log {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        .detail_title,
+        .all_title,
+        .myprize_log_title {
+            width: 60vw;
+            margin-left: 25vw;
+            margin-bottom: -9vh;
+        }
+        .detail_content,
+        .all_content,
+        .myprize_log_content {
+            width: 90vw;
+            padding: 5vw;
+            margin: 0 5vw;
+            background-color: #fcf5e7;
+            border-radius: 1rem;
+            border: 3px solid #95362f;
+            font-size: 2rem;
+            color: #95362f;
+            .all_list li {
+                margin-bottom: 2rem;
+                border-bottom: 2px solid #95362f;
+                padding-bottom: 1rem;
+                // text-overflow: -o-ellipsis-lastline;
+                // overflow: hidden;
+                // text-overflow: ellipsis;
+                // display: -webkit-box;
+                // -webkit-line-clamp: 2;
+                // -webkit-box-orient: vertical;
+                p {
+                    margin-top: 1rem;
+                    height: 4rem;
+                    line-height: 4rem;
+                }
+                span {
+                    float: right;
+                    background: #67c23a;
+                    color: #fff;
+                    padding: 0 2rem;
+                    border-radius: 5rem;
+                }
+                .scroll {
+                    height: auto!important;
+                    max-height: 20vh!important;
+                }
+            }
+            .myprize_list {
+                padding-top: 3rem;
+                li {
+                    height: 6vh;
+                    span {
+                        float: right;
+                    }
+                }
+            }
+            .scroll {
+                height: 50vh;
+                overflow: scroll;
+                margin-top: 6vh;
+            }
+        }
+        .all_title {
+            margin-left: 18vw;
+            margin-bottom: -6vh;
+        }
+        .myprize_log_title {
+            margin-left: 19vw;
+            margin-bottom: -9vh;
+        }
+        .more {
+            text-align: center;
+        }
+        .notmyprize {
+            text-align: center;
+            padding-top: 5rem;
+        }
+    }
+    .qiyuan_input {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        .input {
+            width: 90vw;
+            padding: 5vw;
+            margin: 0 5vw;
+            background-color: #fcf5e7;
+            border-radius: 1rem;
+            border: 3px solid #95362f;
+            font-size: 2rem;
+            color: #95362f;
+            p,
+            textarea,
+            input {
+                margin-top: 1vh;
+                font-size: 2rem;
+            }
+            input {
+                padding: 2rem;
+                border: 2px solid #95362f;
+                border-radius: 1rem;
+            }
+            textarea {
+                border: 2px solid #95362f;
+                border-radius: 1rem;
+            }
+            .input_tips {
+                margin-top: 2vh;
+            }
+        }
+    }
+    .copy_tips {
+        width: 100vw;
+        position: fixed;
+        top: 0;
+    }
+    .luck {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+    }
+}
+
+// @media only screen and (min-device-height: 700px) {
+//     .main-max .index .role {
+//         width: 70vw;
+//     }
+//     .main-max .index .button_list {
+//         bottom: 9rem;
+//     }
+// }
+.main-min .index .index_role2,
+.main-min .index .index_title {
+    width: 75vw;
+    margin: 0 12.5vw;
+}
+
+.main-min .index .index_lamp {
+    width: 50vw;
+    position: fixed;
+    left: 12rem;
+    top: 11rem;
+}
+
+
+/* x,xs,12mini */
+
+@media only screen and (device-width: 375px) and (min-height: 724px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* xr */
+
+@media only screen and (device-width: 414px) and (min-height: 808px) and (-webkit-device-pixel-ratio: 2) {}
+
+
+/* xs max */
+
+@media only screen and (device-width: 414px) and (device-height: 808px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* 12 */
+
+@media only screen and (device-width: 390px) and (min-height: 750px) and (-webkit-device-pixel-ratio: 3) {}
+
+
+/* 12 pro*/
+
+@media only screen and (device-width: 428px) and (min-height: 830px) and (-webkit-device-pixel-ratio: 3) {}
+
+@keyframes beat {
+    0% {
+        top: 1%;
+    }
+    100% {
+        top: 2%;
+    }
+}
+
+@keyframes lamp {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes cloud1 {
+    0% {
+        left: 10%;
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        left: 70%;
+    }
+    100% {
+        left: 60%;
+    }
+}
+
+@keyframes bike {
+    0% {
+        margin-left: 10%;
+    }
+    100% {
+        margin-left: 20%;
+    }
+}

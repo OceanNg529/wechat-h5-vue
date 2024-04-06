@@ -1,0 +1,484 @@
+body {
+    background-color: #fff;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 10vw;
+        z-index: 9999;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .aliyun_captcha {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .copyright {
+        width: 90vw;
+        margin: 0 5vw;
+        position: absolute;
+        bottom: 2.5rem;
+        z-index: 9;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #333;
+        text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
+        line-height: 1.3rem;
+    }
+    .bgmask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textLeft {
+        text-align: left !important;
+    }
+    .msg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90vw;
+        z-index: 9999;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .box {
+            overflow: hidden;
+            height: auto;
+            .ico {
+                width: 30vw;
+                margin: 0px 30vw;
+                position: relative;
+                top: 2rem;
+                z-index: 9999;
+            }
+            .content {
+                background-color: #fcf5e7;
+                border-radius: 1rem;
+                border: 2px solid #5f3c2c;
+                color: #5f3c2c;
+                font-size: 1.5rem;
+                line-height: 2.8rem;
+                padding: 1rem;
+                padding-top: 3rem;
+                text-align: center;
+                .msgtips {
+                    text-align: justify;
+                    color: #e64242;
+                    overflow: scroll;
+                    max-height: 23rem;
+                }
+            }
+        }
+    }
+    .wechat_cash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80vw;
+        z-index: 999;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .box {
+            overflow: hidden;
+            height: auto;
+            .title {
+                position: absolute;
+                top: 5rem;
+                z-index: 9999;
+                text-align: center;
+                width: 100%;
+                font-size: 1.5rem;
+            }
+            .credit {
+                position: absolute;
+                top: 10rem;
+                z-index: 9999;
+                text-align: center;
+                font-size: 5rem;
+                color: #ff4949;
+                width: 100%;
+            }
+            .fail {
+                position: absolute;
+                top: 23rem;
+                width: 50vw;
+                margin: 0 15vw;
+            }
+            .success {
+                position: absolute;
+                top: 22rem;
+                width: 70vw;
+                margin: 0 5vw;
+            }
+        }
+    }
+    .close_button {
+        width: 50vw;
+        margin: 0 auto;
+        margin-top: 1rem;
+        .el-button {
+            width: 100%;
+            height: 5rem;
+            font-size: 1.5rem;
+            background-color: #11b95c;
+            border-color: #11b95c;
+            color: #fff;
+            border-radius: 5rem;
+        }
+    }
+    .centerBox {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .index {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        overflow: hidden;
+        .button {
+            width: 100vw;
+            position: absolute;
+            bottom: 5rem;
+            .tongyi {
+                padding-bottom: 2rem;
+                width: 65vw;
+                margin: 0 auto;
+                background: #fff;
+                padding: .5rem;
+                text-align: center;
+                .el-checkbox {
+                    font-size: 1.5rem;
+                }
+                .el-checkbox__inner {
+                    height: 2rem;
+                    width: 2rem;
+                }
+                .el-checkbox__inner::after {
+                    height: 20px;
+                    left: 12px;
+                    top: 2px;
+                }
+                .el-checkbox__input.is-checked .el-checkbox__inner {
+                    background-color: #4daf50;
+                    border-color: #4daf50;
+                }
+                .el-checkbox__input.is-checked+.el-checkbox__label {
+                    color: #4daf50;
+                }
+                .el-checkbox__label {
+                    font-size: 1.5rem;
+                }
+                .tiaokuan_button {
+                    color: #2096f3;
+                    font-weight: 500;
+                    margin-left: 1rem;
+                    font-size: 1.5rem;
+                }
+            }
+            .start {
+                margin-top: 2rem;
+                .el-button {
+                    width: 90vw;
+                    margin: 0 5vw;
+                    height: 5rem;
+                    font-size: 1.5rem;
+                    background-color: #fff;
+                    border-color: #fff;
+                    color: #f44336;
+                }
+            }
+        }
+    }
+    .tiaokuan {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.80);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .box {
+            width: 90vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 999;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            .ico {
+                width: 60vw;
+                margin: 0 15vw;
+                position: relative;
+                top: 2rem;
+                z-index: 9999;
+                padding-top: 2rem;
+            }
+            .title {
+                width: 50vw;
+                margin: 0 20vw;
+                position: relative;
+                top: 3rem;
+                z-index: 9999;
+            }
+            .content {
+                background-color: #fcf5e7;
+                border-radius: 1rem;
+                height: 70vh;
+                display: inline-block;
+                overflow: scroll;
+                border-top: 30px solid #fcf5e700;
+                padding: 2rem;
+                width: 100%;
+                text-align: justify;
+                line-height: 2.5rem;
+                text-indent: 4rem;
+            }
+        }
+    }
+    .survey {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        overflow: hidden;
+        .progress {
+            width: 100%;
+            .el-progress-bar__outer,
+            .el-progress-bar__inner {
+                border-radius: 0;
+            }
+        }
+        .title {
+            height: 5rem;
+            line-height: 5rem;
+            background: #702000;
+            color: #fff;
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            span {
+                font-size: 1.5rem;
+                float: right;
+                padding-right: 1rem;
+            }
+        }
+        .survey_page {
+            margin: 2rem 0;
+            max-height: 66vh;
+            overflow: scroll;
+            .survey_box {
+                margin: 0 2rem;
+                .tongji {
+                    float: right;
+                }
+                .el-form-item__label {
+                    line-height: 3rem;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+                .el-radio-group,
+                .el-checkbox-group {
+                    width: 100%;
+                    .el-radio,
+                    .el-checkbox {
+                        width: 100%;
+                        border-radius: 5rem;
+                        padding: 1.5rem 2rem;
+                        background-color: #fafafa;
+                        border: 1px solid #a4a4a4;
+                        margin-bottom: 1rem;
+                        .el-radio__input,
+                        .el-checkbox__input {
+                            display: none;
+                        }
+                        .el-radio__label,
+                        .el-checkbox__label {
+                            font-size: 1.5rem;
+                            line-height: 2rem;
+                            white-space: normal;
+                            width: 100%;
+                        }
+                        .el-radio__input.is-checked+.el-radio__label,
+                        .el-checkbox__input.is-checked+.el-checkbox__label {
+                            color: #fff;
+                        }
+                    }
+                    .is-checked {
+                        background-color: #11b95c;
+                        border: 1px solid #007307;
+                    }
+                }
+                .el-input--medium {
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    margin-bottom: 1rem;
+                    textarea {
+                        border-radius: 1rem;
+                        border: 1px solid #a4a4a4;
+                    }
+                    .el-input__inner {
+                        height: 5rem;
+                        padding: 1rem;
+                        font-size: 1.5rem;
+                        border-radius: 1rem;
+                        border: 1px solid #a4a4a4;
+                    }
+                }
+                .el-form-item__error {
+                    font-size: 1.5rem;
+                    position: unset;
+                    text-align: right;
+                }
+                .input_phone {
+                    .el-input--medium {
+                        height: 5rem;
+                        border: 1px solid #a4a4a4;
+                        border-radius: 1rem;
+                        font-size: 1.5rem;
+                        .el-input-group__prepend {
+                            border-radius: 1rem 0 0 1rem;
+                            height: 5rem;
+                            width: 9rem;
+                            text-align: center;
+                        }
+                        .el-input__inner {
+                            border-radius: 0;
+                            border: 0;
+                            border-left: 1px solid #a4a4a4;
+                            border-right: 1px solid #a4a4a4;
+                        }
+                        .el-input-group__append {
+                            border-radius: 0 1rem 1rem 0;
+                            height: 5rem;
+                        }
+                    }
+                    .code {
+                        .el-input__inner {
+                            border-radius: 0 1rem 1rem 0;
+                        }
+                    }
+                }
+            }
+        }
+        .survey_button {
+            position: fixed;
+            bottom: 5rem;
+            width: 90vw;
+            margin: 0 5vw;
+            .el-button--primary {
+                height: 4.5rem;
+                width: 47%;
+                background-color: #702000;
+                border-color: #702000;
+                font-size: 1.5rem;
+                border-radius: 5rem;
+            }
+            .el-button+.el-button {
+                margin-left: 0;
+                float: right;
+            }
+        }
+    }
+    .overbox,
+    .luckbox {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        overflow: hidden;
+        .ico {
+            width: 50vw;
+            margin: 0 25vw;
+            margin-top: 10rem;
+            text-align: center;
+        }
+        .title {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .button {
+            margin-top: 3rem;
+            .el-button {
+                width: 90vw;
+                margin: 0 5vw;
+                height: 5rem;
+                font-size: 1.5rem;
+                background-color: #ff4949;
+                border-color: #ff4949;
+                color: #fff;
+            }
+        }
+    }
+    .overbox {
+        .button {
+            .el-button {
+                background-color: #4daf50;
+                border-color: #4daf50;
+            }
+        }
+    }
+}
+
+
+/* 5 */
+
+.main-max .index .role {
+    width: 70vw;
+}
+
+.main-max .index .button_list {
+    bottom: 9rem;
+}
+
+// @media only screen and (min-device-height: 700px) {
+//     .main-max .index .role {
+//         width: 70vw;
+//     }
+//     .main-max .index .button_list {
+//         bottom: 9rem;
+//     }
+// }
+// /* x,xs,12mini */
+// @media only screen and (device-width: 375px) and (min-height: 724px) and (-webkit-device-pixel-ratio: 3) {}
+// /* xr */
+// @media only screen and (device-width: 414px) and (min-height: 808px) and (-webkit-device-pixel-ratio: 2) {}
+// /* xs max */
+// @media only screen and (device-width: 414px) and (device-height: 808px) and (-webkit-device-pixel-ratio: 3) {}
+// /* 12 */
+// @media only screen and (device-width: 390px) and (min-height: 750px) and (-webkit-device-pixel-ratio: 3) {}
+// /* 12 pro*/
+// @media only screen and (device-width: 428px) and (min-height: 830px) and (-webkit-device-pixel-ratio: 3) {}
